@@ -2,7 +2,7 @@
 <!-- C:\Christophe\Repository\writing-documentation\concat-md\concat-md.ps1 -->
 <!-- So don't modify this file manually but run the tool once more instead -->
 
-<!-- Last refresh date: 2020-05-11 20:38:56 -->
+<!-- Last refresh date: 2020-05-11 22:16:46 -->
 
 <!-- below, content of ./index.md -->
 
@@ -14,6 +14,9 @@
 
 <!-- table-of-contents - start -->
 * [Tips](#tips)
+    * [Git config](#git-config)
+    * [Git init](#git-init)
+    * [Git hooks folder](#git-hooks-folder)
     * [Get the list of modified files](#get-the-list-of-modified-files)
        * [Don't show deleted files](#dont-show-deleted-files)
        * [Restrict based on the extension](#restrict-based-on-the-extension)
@@ -33,6 +36,49 @@
 <!-- below, content of ./010-tips/index.md -->
 
 ## Tips
+
+<!-- below, content of ./010-tips/git-config/index.md -->
+
+### Git config
+
+To view all your global parameters, the command below allows you to display them in the editor of your choice:
+
+```bash
+git config --global --edit
+```
+
+<!-- below, content of ./010-tips/git-core-template/index.md -->
+
+### Git init
+
+When creating a new repo with `git init`, a template is used. The current version is located on `C:\Program Files\Git\mingw64\share\git-core\templates`.
+
+By updating there f.i. the `pre-commit` script, you'll thus automatically get your customized version each time you create a new repo on your disk.
+
+On Linux, the path is `/usr/share/git-core/templates`.
+
+Note: you can change this settings by setting [`init.templateDir`](https://git-scm.com/docs/git-config#Documentation/git-config.txt-inittemplateDir) to your own template folder.
+
+<!-- below, content of ./010-tips/git-hooksPath/index.md -->
+
+### Git hooks folder
+
+By default, the `hooks` folder is located in the `.git ` folder but this can be changed with the [core.hooksPath](https://git-scm.com/docs/git-config#Documentation/git-config.txt-corehooksPath) setting.
+
+The following command will set the hooks folder for ALL PROJECTS to the `c:\repos\central_hooks` folder. This way, in only one instruction, you'll use the same set of hooks for all your repositories.
+
+```bash
+git config --global core.hooksPath c:/repos/central_hooks
+```
+
+Then inside of `c:\repos\central_hooks` you'll need to add a `/hooks` sub-folder and moved all of your own hooks there.
+
+
+Note: you can also change hooks repos by repos using the command below:
+
+```bash
+git config core.hooksPath c:/repos/central_hooks
+```
 
 <!-- below, content of ./010-tips/list-modified-files/index.md -->
 
