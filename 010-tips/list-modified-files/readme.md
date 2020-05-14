@@ -33,7 +33,7 @@ If you don't want deleted files to be mentioned, under DOS, you can use the `fin
 git status -s -uall| findstr /C:" D " /B /v
 ```
 
-`/C:` is for search for a litteral value (not a regex but well a string) so `/C:" D "` will target all lines having, exactly, ` D ` (space D space) in his content
+`/C:` is for search for a litteral value (not a regex but well a string) so `/C:" D "` will target all lines having, exactly, `D` (space D space) in his content
 `/B` is for restricting the search to the start of the string (like  `^` in a regex expression)
 `/v` is for excluding that selection.
 

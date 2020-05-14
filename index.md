@@ -1,6 +1,6 @@
-![Banner](./images/banner.png)
-
 # Git tips and snippets
+
+![Banner](./images/banner.jpg)
 
 > A few git tips and functions snippets
 
