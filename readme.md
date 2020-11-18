@@ -2,15 +2,13 @@
 <!-- Don't modify this file manually (you'll loose your changes) -->
 <!-- but run the tool once more -->
 
-<!-- Last refresh date: 2020-11-18 09:21:57 -->
+<!-- Last refresh date: 2020-11-18 09:32:30 -->
 
 <!-- below, content of ./index.md -->
 
-# Git tips and snippets
+# Git core, tips, tools and snippets
 
-![Banner](./images/banner.jpg)
-
-> A few git tips and functions snippets
+![Banner](./banner.svg)
 
 <!-- table-of-contents - start -->
 * [Tips](#tips)

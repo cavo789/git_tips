@@ -1,7 +1,5 @@
-# Git tips and snippets
+# Git core, tips, tools and snippets
 
-![Banner](./images/banner.jpg)
-
-> A few git tips and functions snippets
+![Banner](./banner.svg)
 
 <!-- concat-md::toc -->
