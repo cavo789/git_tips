@@ -2,7 +2,7 @@
 <!-- Don't modify this file manually (you'll loose your changes) -->
 <!-- but run the tool once more -->
 
-<!-- Last refresh date: 2020-11-18 09:32:30 -->
+<!-- Last refresh date: 2020-12-01 12:05:20 -->
 
 <!-- below, content of ./index.md -->
 
@@ -23,6 +23,7 @@
     * [Skip a folder](#skip-a-folder)
   * [Retrieve the email of a Github user](#retrieve-the-email-of-a-github-user)
   * [Search users on github based on location](#search-users-on-github-based-on-location)
+* [Git cheatsheet](#git-cheatsheet)
 * [Core functions](#core-functions)
   * [Update a branch (merge request)](#update-a-branch-merge-request)
 * [Tools](#tools)
@@ -240,11 +241,17 @@ So, simply replace `Nestor789` in the URL above by the name of the user for whom
 
 The URL `https://github.com/search?q=+location:Racour&type=Users` will display the list of users for the city of `Racour` so just replace the city name to the one of your choice.
 
-<!-- below, content of ./020-core/readme.md -->
+<!-- below, content of ./020-cheatsheet/readme.md -->
+
+## Git cheatsheet
+
+* Clone a specific branch files: `git clone --branch <branch-name> <url-repo>`
+
+<!-- below, content of ./030-core/readme.md -->
 
 ## Core functions
 
-<!-- below, content of ./020-core/git-merge/readme.md -->
+<!-- below, content of ./030-core/git-merge/readme.md -->
 
 ### Update a branch (merge request)
 
@@ -264,11 +271,11 @@ Then, run these commands:
       * Select the list of files with conflicts and solve them one by one or all at once: right click on the file and accept all incoming changes.
       * This done, select the list of files once more, right click and commit changes.
 
-<!-- below, content of ./030-tools/readme.md -->
+<!-- below, content of ./040-tools/readme.md -->
 
 ## Tools
 
-<!-- below, content of ./030-tools/check-repos-status/readme.md -->
+<!-- below, content of ./040-tools/check-repos-status/readme.md -->
 
 ### Check status
 
@@ -278,7 +285,7 @@ Scan all repositories on your hard disk under a root folder like `C:\Christophe\
 
 [https://github.com/cavo789/tools_git_scripts/blob/master/update_repos/git_check_status.bat](https://github.com/cavo789/tools_git_scripts/blob/master/update_repos/git_check_status.bat)
 
-<!-- below, content of ./030-tools/deploy-online/readme.md -->
+<!-- below, content of ./040-tools/deploy-online/readme.md -->
 
 ### Deploy online
 
@@ -286,7 +293,7 @@ Get the newer version of a repository and update a website by just running /depl
 
 [https://github.com/cavo789/tools_git_scripts/tree/master/deploy](https://github.com/cavo789/tools_git_scripts/tree/master/deploy)
 
-<!-- below, content of ./030-tools/favorites/readme.md -->
+<!-- below, content of ./040-tools/favorites/readme.md -->
 
 ### Easy access to your stars
 
@@ -294,7 +301,7 @@ Get the newer version of a repository and update a website by just running /depl
 
 The interface is easy to use and has a nice search tool so it becomes really simple to retrieve a liked repo.
 
-<!-- below, content of ./030-tools/get-origin/readme.md -->
+<!-- below, content of ./040-tools/get-origin/readme.md -->
 
 ### Display the origin of repos
 
@@ -304,7 +311,7 @@ Scan all repositories on your hard disk under a root folder like `C:\Christophe\
 
 [https://github.com/cavo789/tools_git_scripts/blob/master/update_repos/git_get_origin.bat](https://github.com/cavo789/tools_git_scripts/blob/master/update_repos/git_get_origin.bat)
 
-<!-- below, content of ./030-tools/git-pull/readme.md -->
+<!-- below, content of ./040-tools/git-pull/readme.md -->
 
 ### Git pull
 
@@ -314,7 +321,7 @@ Scan all repositories on your hard disk under a root folder like `C:\Christophe\
 
 [https://github.com/cavo789/tools_git_scripts/blob/master/update_repos/git_pull.bat](https://github.com/cavo789/tools_git_scripts/blob/master/update_repos/git_pull.bat)
 
-<!-- below, content of ./030-tools/git-standup/readme.md -->
+<!-- below, content of ./040-tools/git-standup/readme.md -->
 
 ### Get history of changes, cross repos
 
@@ -324,7 +331,7 @@ This tool allow to retrieve the list of commits made the last days (there are a 
 
 Easy to copy/paste f.i. for a Standup meeting.
 
-![Git Standup](./030-tools/git-standup/images/git_standup.gif)
+![Git Standup](./040-tools/git-standup/images/git_standup.gif)
 
 <!-- below, content of ./999-license/readme.md -->
 
