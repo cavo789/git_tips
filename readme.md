@@ -2,7 +2,7 @@
 <!-- Don't modify this file manually (you'll loose your changes) -->
 <!-- but run the tool once more -->
 
-<!-- Last refresh date: 2020-12-01 12:05:20 -->
+<!-- Last refresh date: 2020-12-03 08:05:22 -->
 
 <!-- below, content of ./index.md -->
 
@@ -22,6 +22,8 @@
     * [Restrict based on the extension](#restrict-based-on-the-extension)
     * [Skip a folder](#skip-a-folder)
   * [Retrieve the email of a Github user](#retrieve-the-email-of-a-github-user)
+    * [The repo owner's email address](#the-repo-owners-email-address)
+    * [The email of the person who has made that specific commit](#the-email-of-the-person-who-has-made-that-specific-commit)
   * [Search users on github based on location](#search-users-on-github-based-on-location)
 * [Git cheatsheet](#git-cheatsheet)
 * [Core functions](#core-functions)
@@ -229,11 +231,21 @@ Still based on the example here above, `git status -s -uall| findstr /C:"/Helper
 
 ### Retrieve the email of a Github user
 
+#### The repo owner's email address
+
 Let's say you want to retrieve the email of the `Nestor789` email.
 
 Just go to the following URL `https://api.github.com/users/Nestor789/events/public` and search for the `email` keyword.
 
 So, simply replace `Nestor789` in the URL above by the name of the user for whom you wish to retrieve the information.
+
+#### The email of the person who has made that specific commit
+
+There is a second way to retrieve email, this time, the email that is linked to a given patch. It's explained [here](https://dev.to/codewithfahad/github-tip-of-the-day-keep-your-commit-email-address-private-2eo2).
+
+Open any Github repository, open any commit and add `.path` as suffix in the URL; tadaaaa!
+
+![Add .patch suffix and get email](./010-tips/retrieve-users-email/images/commit_and_patch.png)
 
 <!-- below, content of ./010-tips/search-users-based-on-location/readme.md -->
 
