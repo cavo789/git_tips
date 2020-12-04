@@ -2,7 +2,7 @@
 <!-- Don't modify this file manually (you'll loose your changes) -->
 <!-- but run the tool once more -->
 
-<!-- Last refresh date: 2020-12-03 08:05:22 -->
+<!-- Last refresh date: 2020-12-04 15:43:48 -->
 
 <!-- below, content of ./index.md -->
 
@@ -26,6 +26,8 @@
     * [The email of the person who has made that specific commit](#the-email-of-the-person-who-has-made-that-specific-commit)
   * [Search users on github based on location](#search-users-on-github-based-on-location)
 * [Git cheatsheet](#git-cheatsheet)
+  * [Clone a specific branch files:](#clone-a-specific-branch-files:)
+  * [Rename a local branch and push then](#rename-a-local-branch-and-push-then)
 * [Core functions](#core-functions)
   * [Update a branch (merge request)](#update-a-branch-merge-request)
 * [Tools](#tools)
@@ -257,7 +259,21 @@ The URL `https://github.com/search?q=+location:Racour&type=Users` will display t
 
 ## Git cheatsheet
 
-* Clone a specific branch files: `git clone --branch <branch-name> <url-repo>`
+### Clone a specific branch files:
+
+`git clone --branch <branch-name> <url-repo>`
+
+### Rename a local branch and push then
+
+* `<oldname>` is the current name of the branch, the one you wish rename and
+* `<newname>` the new name to give
+
+1. `git branch <oldname>`
+2. `git branch -m <newname>`
+3. `git branch` <-- you should see the new name
+4. `git push origin :<oldname>`
+5. `git push origin <newname>:refs/heads/<oldname>`
+6. `git push origin HEAD:<newname>` <-- now the branch is also online
 
 <!-- below, content of ./030-core/readme.md -->
 
