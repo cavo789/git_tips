@@ -2,7 +2,7 @@
 <!-- Don't modify this file manually (you'll loose your changes) -->
 <!-- but run the tool once more -->
 
-<!-- Last refresh date: 2020-12-04 15:43:48 -->
+<!-- Last refresh date: 2021-01-08 10:30:06 -->
 
 <!-- below, content of ./index.md -->
 
@@ -30,6 +30,7 @@
   * [Rename a local branch and push then](#rename-a-local-branch-and-push-then)
 * [Core functions](#core-functions)
   * [Update a branch (merge request)](#update-a-branch-merge-request)
+  * [Self update](#self-update)
 * [Tools](#tools)
   * [Check status](#check-status)
   * [Deploy online](#deploy-online)
@@ -298,6 +299,12 @@ Then, run these commands:
       * Show the `Source Control` pane (<kbd>CTRL</kbd>-<kbd>SHIFT</kbd>-<kbd>G</kbd> followed by <kbd>G</kbd> once more),
       * Select the list of files with conflicts and solve them one by one or all at once: right click on the file and accept all incoming changes.
       * This done, select the list of files once more, right click and commit changes.
+
+<!-- below, content of ./030-core/git-self-update/readme.md -->
+
+### Self update
+
+Run `git update-git-for-windows` to start the self-update of Git.
 
 <!-- below, content of ./040-tools/readme.md -->
 
